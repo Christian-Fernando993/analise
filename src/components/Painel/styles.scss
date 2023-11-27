@@ -1,0 +1,16 @@
+.imageinputcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9fa5b3;
+    padding: 60px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: #9fa5b3;
+    text-align: center;
+
+    &:hover{
+        border: 2px dashed black;
+        color: black;
+    }
+}

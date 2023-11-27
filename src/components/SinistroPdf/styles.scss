@@ -1,0 +1,13 @@
+.c_sinister_pdf{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    margin: 5px 0;
+    box-shadow: 0 1px 3px rgba(#000, 0.1);
+
+    @include viewports(up-to medium){
+        width: 100%;
+    }
+}

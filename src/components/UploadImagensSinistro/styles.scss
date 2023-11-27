@@ -1,0 +1,60 @@
+.c__sinister_image_uploader {
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 40px;
+
+    .preview {
+        width: 100%;
+        display: block;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(#000, 0.05);
+    }
+
+    .hint {
+        display: flex;
+        margin-bottom: 10px;
+
+        @include viewports(up-to medium) {
+            flex-direction: column;
+        }
+
+        &__text {
+            flex: 1;
+        }
+
+        &__title {
+            font-weight: bold;
+            color: #111;
+            display: block;
+            font-size: 18px;
+        }
+
+        &__rejected {
+            font-weight: normal;
+            color: #8c0303;
+            font-size: 16px;
+            //margin-bottom: 10px;
+        }
+
+        &__description {
+            font-weight: normal;
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__image {
+            width: 250px;
+            margin-left: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(#000, 0.05);
+
+            @include viewports(up-to medium) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
